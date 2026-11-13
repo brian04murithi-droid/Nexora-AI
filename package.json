@@ -1,0 +1,13 @@
+{
+  "name": "nexora-ai",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": ["apps/web", "apps/engine", "packages/shared"],
+  "scripts": {
+    "dev": "npm run dev --workspace @nexora/web",
+    "dev:web": "npm run dev --workspace @nexora/web",
+    "dev:engine": "npm run dev --workspace @nexora/engine",
+    "build": "npm run build --workspace @nexora/web && npm run build --workspace @nexora/engine",
+    "typecheck": "npm run typecheck --workspace @nexora/web && npm run typecheck --workspace @nexora/engine"
+  }
+}
